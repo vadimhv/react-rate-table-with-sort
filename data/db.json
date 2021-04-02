@@ -1,0 +1,70 @@
+{
+  "participants": [
+    {
+      "id": 1,
+      "name": "Hauser Lisa Theresa",
+      "shooting": 89.8,
+      "speed": 11
+    },
+    {
+      "id": 2,
+      "name": "INNERHOFER Katharina",
+      "shooting": 72.6,
+      "speed": 13.5
+    },
+    {
+      "id": 3,
+      "name": "SCHWAIGER Julia",
+      "shooting": 80.3,
+      "speed": 13.9
+    },
+    {
+      "id": 4,
+      "name": "DOMRACHEVA Darya",
+      "shooting": 75.6,
+      "speed": 6.5
+    },
+    {
+      "id": 5,
+      "name": "SKARDINO Nadezhda",
+      "shooting": 89.6,
+      "speed": 8.6
+    },
+    {
+      "id": 6,
+      "name": "KRYUKO Iryna",
+      "shooting": 82.7,
+      "speed": 9.2
+    },
+    {
+      "id": 7,
+      "name": "DAHLMEIER Laura",
+      "shooting": 87.4,
+      "speed": 0.5
+    },
+    {
+      "id": 8,
+      "name": "HILDEBRAND Franziska",
+      "shooting": 85.4,
+      "speed": 5.4
+    },
+    {
+      "id": 9,
+      "name": "GÖSSNER Miriam",
+      "shooting": 66.5,
+      "speed": 5.6
+    },
+    {
+      "id": 10,
+      "name": "HAMMERSCHMIDT Maren",
+      "shooting": 79.6,
+      "speed": 6.7
+    },
+    {
+      "id": 11,
+      "name": "WIERER Dorothea",
+      "shooting": 85.4,
+      "speed": 7.6
+    }
+  ]
+}

@@ -1,41 +1,20 @@
 import React from "react";
-import Search from "./Search/Search";
-import Sorting from "./Sorting/Sorting";
+import RateTable from "./RateTable";
+import {connect} from "react-redux";
+import {getParticipants, sortName, sortShoot, sortSpeed} from "../../redux/rate-reducer";
 
-const RateTable = () => {
-
+const RateTableContainer = (props) => {
+    props.getParticipants();
     return (
         <div>
-            <div>
-                <Search />
-                <Sorting />
-            </div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Ім'я</th>
-                        <th>Попадання</th>
-                        <th>Скорострільність</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Hauser Lisa Theresa</td>
-                        <td>11</td>
-                        <td>89.8c</td>
-                    </tr>
-                    <tr>
-                        <td>Domracheva Darya</td>
-                        <td>6.5</td>
-                        <td>75.6</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-
-                </tfoot>
-            </table>
+            <RateTable participants={props.participants} sortName={props.sortName} sortShoot={props.sortShoot}
+                       sortSpeed={props.sortSpeed}/>
         </div>
     )
 }
-
-export default RateTable;
+const mapStateToProps = (state) => {
+    return {
+        participants: state.rate.participants
+    }
+}
+export default connect(mapStateToProps, {sortName, sortShoot, sortSpeed, getParticipants})(RateTableContainer);
